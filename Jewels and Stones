@@ -1,0 +1,24 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t,i,j;
+	string s1,s2;
+	cin>>t;
+while(t--){
+    int count=0;
+    cin>>s1>>s2;
+    for(i=0;i<s2.size();i++){
+        for(j=0;j<s1.size();j++){
+          if(s2[i]==s1[j]) {
+              count++; 
+          break;
+              
+          }
+        }
+    }
+    cout<<count<<'\n';
+}
+cout<<endl;
+}
